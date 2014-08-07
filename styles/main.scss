@@ -1,0 +1,21 @@
+/* Main Style File for OmegaPhi.club */
+
+header{
+  nav{
+    ul{
+      list-style: none;
+      padding-bottom: 10px;
+      li{
+        display: inline;
+        padding: 10px;
+        a{
+          text-decoration: none;
+          color: inherit;
+        }
+        a:hover{
+          border-bottom: 3px white solid;
+        }
+      }
+    }
+  }
+}
