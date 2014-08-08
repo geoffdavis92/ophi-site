@@ -1,21 +1,71 @@
 /* Main Style File for OmegaPhi.club */
+@import 'fonts';
+// Variables
+  //Spacing and Sizes
+$pad10: 15px;
+$pad3: 3px;
+  //Colors
+$red: #b50140;
+$gold: #F1d211;
+$lt-gray: #bbb;
+$lt-gray-hover: #ddd;
+$blue: #097AD2;
+
+// Mixins
+
+@mixin transition($time){
+  -webkit-transition: all $time;
+  -o-transition: all $time;
+  -moz-transition: all $time;
+}
 
 header{
+  background-color: $red;
+  h1{
+    font-family: $font-head, serif;
+  }
   nav{
     ul{
       list-style: none;
-      padding-bottom: 10px;
-      li{
-        display: inline;
-        padding: 10px;
-        a{
-          text-decoration: none;
-          color: inherit;
-        }
-        a:hover{
-          border-bottom: 3px white solid;
+      padding-bottom: 7px;
+      margin-left: -2.37%;
+      text-align: center;
+      a{
+        @include transition(.35s);
+        text-decoration: none;
+        color: inherit;
+        border-bottom: transparent 3px solid;
+        padding-bottom: 5px;
+        li{
+          display: inline;
+          padding: $pad10;
+          font-size: 1.25em;
+          font-family: $font-head, serif;
         }
       }
+      a:hover{
+        @include transition(.25s);
+        border-bottom: $pad3 $gold solid;
+        color: $gold;
+      }
     }
+  }
+}
+
+div.container{
+  font-family: $font-main, sans-serif;
+}
+
+footer{
+  font-family: $font-head, serif;
+  color: $lt-gray;
+  a{
+    @include transition(.35s);
+    color: inherit;
+    text-decoration: none;
+  }
+  a:hover{
+    @include transition(.25s);
+    color: $red;
   }
 }

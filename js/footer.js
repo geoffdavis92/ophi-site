@@ -30,7 +30,7 @@ function footer(){
   cFF.appendChild(feedback);
 
     function styleF(){
-      cFoot.style.fontFamily = "Droid Sans, Helvetica, sans-serif";
+      // cFoot.style.fontFamily = "Droid Sans, Helvetica, sans-serif";
       cFoot.style.width = "100%";
       cFoot.style.textAlign = "center";
       cFoot.style.marginTop = "1.75%";
