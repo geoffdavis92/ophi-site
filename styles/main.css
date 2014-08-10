@@ -7,7 +7,10 @@
   font-weight: normal;
   font-style: normal; }
 header {
-  background-color: #b50140; }
+  padding-top: 1%;
+  margin-bottom: -1.1%;
+  background-color: #b50140;
+  z-index: 10; }
   header h1 {
     font-family: "Cinzel", serif; }
   header nav ul {
@@ -36,11 +39,48 @@ header {
       color: #f1d211; }
 
 div.container {
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300; }
+  div.container h2 {
+    margin-top: -.5%;
+    text-align: center;
+    width: 100%;
+    color: #111;
+    font-size: 5em;
+    text-transform: uppercase;
+    margin-bottom: 2.5%; }
+    div.container h2 p#sub {
+      font-size: .35em;
+      padding: 0; }
+  div.container h2#splashTitle {
+    margin-top: -23.25%;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    color: white;
+    font-size: 5em;
+    text-shadow: 0px 0px 1px #bbbbbb; }
+  div.container img#splash {
+    -webkit-filter: brightness(-5%);
+    -webkit-filter: contrast(115%);
+    -webkit-transition: all 0.35s;
+    -o-transition: all 0.35s;
+    -moz-transition: all 0.35s;
+    width: 80%;
+    margin: 0 10% 0 10%;
+    z-index: -9; }
+  div.container p {
+    width: 80%;
+    margin: 0 10% 0 10%;
+    padding: 0 25px 12px 25px;
+    letter-spacing: .6px;
+    line-height: 1.65em;
+    margin-bottom: 1em; }
 
 footer {
   font-family: "Cinzel", serif;
-  color: #bbbbbb; }
+  color: #666666;
+  margin-bottom: 20px; }
   footer a {
     -webkit-transition: all 0.35s;
     -o-transition: all 0.35s;

@@ -7,6 +7,7 @@ $pad3: 3px;
   //Colors
 $red: #b50140;
 $gold: #F1d211;
+$gray: #666;
 $lt-gray: #bbb;
 $lt-gray-hover: #ddd;
 $blue: #097AD2;
@@ -19,8 +20,17 @@ $blue: #097AD2;
   -moz-transition: all $time;
 }
 
+@mixin centerCol(){
+  width: 80%;
+  margin: 0 10% 0 10%;
+}
+
 header{
+  padding-top: 1%;
+  margin-bottom: -1.1%; //2.5%
   background-color: $red;
+  z-index: 10;
+
   h1{
     font-family: $font-head, serif;
   }
@@ -54,11 +64,51 @@ header{
 
 div.container{
   font-family: $font-main, sans-serif;
+  font-weight: 300;
+
+h2{
+  margin-top:-.5%;
+  text-align: center;
+  width: 100%;
+  color: #111;
+  font-size: 5em;
+  text-transform: uppercase;
+  margin-bottom: 2.5%;
+
+  p#sub{
+    font-size: .35em;
+    padding: 0;
+  }
+}
+  h2#splashTitle{
+    margin-top:-23.25%;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    color: white;
+    font-size: 5em;
+    text-shadow: 0px 0px 1px $lt-gray;
+  }
+img#splash{
+  -webkit-filter: brightness(-5%);
+  -webkit-filter: contrast(115%);
+  @include transition(.35s);
+  @include centerCol;
+  z-index: -9;
+}
+p{
+  @include centerCol;
+  padding: 0 25px 12px 25px;
+  letter-spacing: .6px;
+  line-height: 1.65em;
+  margin-bottom: 1em;
+}
 }
 
 footer{
   font-family: $font-head, serif;
-  color: $lt-gray;
+  color: $gray;
+  margin-bottom: 20px;
   a{
     @include transition(.35s);
     color: inherit;

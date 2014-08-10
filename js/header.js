@@ -102,10 +102,9 @@ nUlLiA4.setAttribute("id","a3");
     cHead.style.width = "100%";
     cHead.style.marginLeft = "0";
     cHead.style.marginRight = "0";
-    cHead.style.marginBottom = "2.5%";
+    // cHead.style.marginBottom = "2.5%";
     // cHead.style.backgroundColor = "#9D2042";
     cHead.style.textAlign = "center";
-    cHead.style.paddingTop = ".25%";
     }
 
   styleH();
