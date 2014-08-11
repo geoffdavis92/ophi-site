@@ -1,112 +1,99 @@
-// ALSAC Folder - Header JavaScript
-
-
 var cHA = document.createElement("a");
 var cHead = document.createElement("header");
 var cNav = document.createElement("nav");
 
 function header(){
-  document.body.cHead;
-  document.body.appendChild(cHead);
-  var cH1 = document.createElement("h1");
-  cHead.appendChild(cH1);
-  var cH1Text = document.createTextNode("Omega Phi");
-  cH1.appendChild(cH1Text);
-  cH1.setAttribute("id","siteH1");
+      document.body.cHead;
+      document.body.appendChild(cHead);
+      var cH1 = document.createElement("h1");
+      cHead.appendChild(cH1);
+      var cH1Text = document.createTextNode("Omega Phi");
+      cH1.appendChild(cH1Text);
+      cH1.setAttribute("id","siteH1");
 
-  //Create Nav Ul
-  cHead.appendChild(cNav);
-  var nUl = document.createElement("ul");
-  cNav.appendChild(nUl);
-  nUl.setAttribute("id","navList");
+      //Create Nav Ul
+      cHead.appendChild(cNav);
+      var ul = document.createElement("ul");
+      cNav.appendChild(ul);
+      ul.setAttribute("id","navList");
 
-// Create and Link Anchors
-var nUlLiA1 = document.createElement("a");
-nUl.appendChild(nUlLiA1);
-if (document.URL === "file://localhost/Users/papag444/gd.info-redesign/index.html") {
-  nUlLiA1.setAttribute("href","../gd.info-redesign/index.html");
-  }
-else{
-  nUlLiA1.setAttribute("href","../index.html");
+    // Create and Link Anchors
+    var a1 = document.createElement("a");
+    ul.appendChild(a1);
+    a1.setAttribute("href","../link1.html");
+    a1.setAttribute("id","a1");
+
+    var a2 = document.createElement("a");
+    ul.appendChild(a2);
+      a2.setAttribute("href","../link2.html");
+    a2.setAttribute("id","a2");
+
+    var a3 = document.createElement("a");
+    ul.appendChild(a3);
+      a3.setAttribute("href","../link3.html");
+    a3.setAttribute("id","a3");
+
+    var a4 = document.createElement("a");
+    ul.appendChild(a4);
+      a4.setAttribute("href","../link4.html");
+    a4.setAttribute("id","a4");
+
+    var a5 = document.createElement("a");
+    ul.appendChild(a5);
+      a5.setAttribute("href","../link4.html");
+    a5.setAttribute("id","a5");
+
+      //Create Li
+      var li1 = document.createElement("li");
+      a1.appendChild(li1);
+      var li2 = document.createElement("li");
+      a2.appendChild(li2);
+      var li3 = document.createElement("li");
+      a3.appendChild(li3);
+      var li4 = document.createElement("li");
+      a4.appendChild(li4);
+      var li5 = document.createElement("li");
+      a5.appendChild(li5);
+
+
+      // Create Anchor Text
+      var a1Text = document.createTextNode("Home");
+      li1.appendChild(a1Text);
+      var a2Text = document.createTextNode("About");
+      li2.appendChild(a2Text);
+      var a3Text = document.createTextNode("Membership");
+      li3.appendChild(a3Text);
+      var a4Text = document.createTextNode("Activities");
+      li4.appendChild(a4Text);
+      var a5Text = document.createTextNode("Service");
+      li5.appendChild(a5Text);
+
+      function styleNav(){
+        // cNav = nav element
+        // ul = ul element
+
+          cNav.style.color = "white";
+          cNav.style.fontWeight = "medium";
+        }
+
+      function styleH(){
+        var getH1 = document.getElementById("siteH1");
+
+        getH1.style.fontSize = "5em";
+        getH1.style.marginBottom = "-1.25%";
+        getH1.style.marginTop = ".75%";
+        // getH1.style.fontFamily = "Droid Serif, Droid Sans Mono, monospace";
+        // cHead.style.fontFamily = "Droid Sans, monospace";
+        cHead.style.color = "#ffffff";
+        cHead.style.width = "100%";
+        cHead.style.marginLeft = "0";
+        cHead.style.marginRight = "0";
+        // cHead.style.marginBottom = "2.5%";
+        // cHead.style.backgroundColor = "#9D2042";
+        cHead.style.textAlign = "center";
+      }
+
+      styleH();
+      styleNav();
 }
-nUlLiA1.setAttribute("id","a1");
-
-var nUlLiA2 = document.createElement("a");
-nUl.appendChild(nUlLiA2);
-if (document.URL === "file://localhost/Users/papag444/gd.info-redesign/about.html"){
-  nUlLiA2.setAttribute("href","../gd.info-redesign/about.html"); //about page
-}
-else{
-  nUlLiA2.setAttribute("href","../about.html");
-}
-nUlLiA2.setAttribute("id","a2");
-
-var nUlLiA3 = document.createElement("a");
-nUl.appendChild(nUlLiA3);
-if (document.URL === "file://localhost/Users/papag444/gd.info-redesign/alsac/index.html"){
-  nUlLiA3.setAttribute("href","../alsac/index.html");
-}
-else{
-  nUlLiA3.setAttribute("href","../gd.info-redesign/alsac/index.html");
-}
-nUlLiA3.setAttribute("id","a3");
-
-var nUlLiA4 = document.createElement("a");
-nUl.appendChild(nUlLiA4);
-if (document.URL === "file://localhost/Users/papag444/gd.info-redesign/portfolio/index.html"){
-  nUlLiA4.setAttribute("href","../portfolio/index.html");
-}
-else{
-  nUlLiA4.setAttribute("href","../gd.info-redesign/portfolio/index.html");
-}
-nUlLiA4.setAttribute("id","a3");
-
-  //Create Li
-  var nUlLi1 = document.createElement("li");
-  nUlLiA1.appendChild(nUlLi1);
-  var nUlLi2 = document.createElement("li");
-  nUlLiA2.appendChild(nUlLi2);
-  var nUlLi3 = document.createElement("li");
-  nUlLiA3.appendChild(nUlLi3);
-  var nUlLi4 = document.createElement("li");
-  nUlLiA4.appendChild(nUlLi4);
-
-
-  // Create Anchor Text
-  var a1Text = document.createTextNode("Home");
-  nUlLi1.appendChild(a1Text);
-  var a2Text = document.createTextNode("About");
-  nUlLi2.appendChild(a2Text);
-  var a3Text = document.createTextNode("Internship");
-  nUlLi3.appendChild(a3Text);
-  var a4Text = document.createTextNode("Portfolio");
-  nUlLi4.appendChild(a4Text);
-
-  function styleNav(){
-    // cNav = nav element
-    // nUl = ul element
-
-      cNav.style.color = "white";
-      cNav.style.fontWeight = "medium";
-    }
-
-  function styleH(){
-    var getH1 = document.getElementById("siteH1");
-
-    getH1.style.fontSize = "5em";
-    getH1.style.marginBottom = "-1.25%";
-    getH1.style.marginTop = ".75%";
-    // getH1.style.fontFamily = "Droid Serif, Droid Sans Mono, monospace";
-    // cHead.style.fontFamily = "Droid Sans, monospace";
-    cHead.style.color = "#ffffff";
-    cHead.style.width = "100%";
-    cHead.style.marginLeft = "0";
-    cHead.style.marginRight = "0";
-    // cHead.style.marginBottom = "2.5%";
-    // cHead.style.backgroundColor = "#9D2042";
-    cHead.style.textAlign = "center";
-    }
-
-  styleH();
-  styleNav();
-/* END of HEADER creation */ }
+    /* END of HEADER creation */

@@ -1,5 +1,6 @@
 /* Main Style File for OmegaPhi.club */
 @import 'fonts';
+@import 'bstrap-col';
 // Variables
   //Spacing and Sizes
 $pad10: 15px;
@@ -11,6 +12,7 @@ $gray: #666;
 $lt-gray: #bbb;
 $lt-gray-hover: #ddd;
 $blue: #097AD2;
+$pad: 15px;
 
 // Mixins
 
@@ -20,9 +22,16 @@ $blue: #097AD2;
   -moz-transition: all $time;
 }
 
-@mixin centerCol(){
-  width: 80%;
-  margin: 0 10% 0 10%;
+@mixin centerCol($wid,$mar){
+  width: $wid;
+  margin-left: $mar;
+  margin-right: $mar;
+  margin-bottom: 0;
+}
+
+@mixin textCenter(){
+  text-align: center;
+  width: 100%;
 }
 
 header{
@@ -62,47 +71,90 @@ header{
   }
 }
 
-div.container{
+div.content{
   font-family: $font-main, sans-serif;
   font-weight: 300;
 
-h2{
-  margin-top:-.5%;
-  text-align: center;
-  width: 100%;
-  color: #111;
-  font-size: 5em;
-  text-transform: uppercase;
-  margin-bottom: 2.5%;
-
-  p#sub{
-    font-size: .35em;
-    padding: 0;
-  }
-}
-  h2#splashTitle{
-    margin-top:-23.25%;
-    text-align: center;
-    width: 100%;
-    position: absolute;
-    color: white;
+  h2{
+    margin-top:-.5%;
+    @include textCenter;
+    color: #111;
     font-size: 5em;
-    text-shadow: 0px 0px 1px $lt-gray;
+    text-transform: uppercase;
+    margin-bottom: -2.5%;
+    }
+    h2#splashTitle{
+      margin-top:-23.25%;
+      text-align: center;
+      width: 100%;
+      position: absolute;
+      color: white;
+      font-size: 5em;
+      text-shadow: 0px 0px 1px $lt-gray;
+    }
+    h3#sub{
+      @include textCenter;
+      font-size: 1.75em;
+      padding: 0;
+      color: $red
+    }
+  img#splash{
+    height: 33%;
+    -webkit-filter: brightness(-5%);
+    -webkit-filter: contrast(115%);
+    @include transition(.35s);
+    @include centerCol(80%,10%);
+    z-index: -9;
   }
-img#splash{
-  -webkit-filter: brightness(-5%);
-  -webkit-filter: contrast(115%);
-  @include transition(.35s);
-  @include centerCol;
-  z-index: -9;
-}
-p{
-  @include centerCol;
-  padding: 0 25px 12px 25px;
-  letter-spacing: .6px;
-  line-height: 1.65em;
-  margin-bottom: 1em;
-}
+  p{
+    @include centerCol(70%,15%);
+    // padding: 0 50px 12px 50px;
+    letter-spacing: 1.25px;
+    line-height: 1.65em;
+    margin-bottom: 1em;
+  }
+  p#col-2{
+    @include centerCol(30%, 5%);
+  }
+  // ul{
+  //   list-style: none;
+  //   margin-left: 7.5%;
+  //   width:70%;
+  //
+  //   li{
+  //     display: inline;
+  //     p{
+  //       display: inline;
+  //       width: 20px;
+  //     }
+  //     p::after{
+  //       content: ". ";
+  //     }
+  //   }
+  // }
+  .container#strap{
+    .col-md-4{
+    background-color: $blue;
+  }
+  }
+  table{
+      width: 80%;
+      margin: 0 10% 0 10%;
+    th{
+      font-weight: 500;
+    }
+    tr{
+      td#l{
+        padding-right: $pad;
+      }
+      td#m{
+        padding: $pad;
+      }
+      td#r{
+        padding-left: $pad;
+      }
+    }
+  }
 }
 
 footer{

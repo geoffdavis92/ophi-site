@@ -6,6 +6,47 @@
   src: url("../fonts/cinzel-fontfacekit/web fonts/cinzel_regular_macroman/Cinzel-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/cinzel-fontfacekit/web fonts/cinzel_regular_macroman/Cinzel-Regular-webfont.woff") format("woff"), url("../fonts/cinzel-fontfacekit/web fonts/cinzel_regular_macroman/Cinzel-Regular-webfont.ttf") format("truetype"), url("../fonts/cinzel-fontfacekit/web fonts/cinzel_regular_macroman/Cinzel-Regular-webfont.svg#cinzelregular") format("svg");
   font-weight: normal;
   font-style: normal; }
+.container#strap {
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 80%;
+  margin-right: 10%;
+  margin-left: 10%; }
+  @media (min-width: 768px) {
+    .container#strap {
+      width: 750px; } }
+  @media (min-width: 992px) {
+    .container#strap {
+      width: 970px; } }
+  @media (min-width: 1200px) {
+    .container#strap {
+      width: 1170px; } }
+
+.row {
+  margin-right: -15px;
+  margin-left: -15px; }
+
+.row:before, .row-before:after {
+  display: table;
+  content: " "; }
+
+.row:after {
+  clear: both; }
+
+.col-md-4 {
+  position: relative;
+  text-align: justify;
+  width: 27.5%;
+  min-height: 1px;
+  padding-right: 25px;
+  padding-left: 25px; }
+  @media (min-width: 992px) {
+    .col-md-4 {
+      float: left; } }
+
+footer {
+  float: left; }
+
 header {
   padding-top: 1%;
   margin-bottom: -1.1%;
@@ -38,21 +79,18 @@ header {
       border-bottom: 3px #f1d211 solid;
       color: #f1d211; }
 
-div.container {
+div.content {
   font-family: "Open Sans", sans-serif;
   font-weight: 300; }
-  div.container h2 {
+  div.content h2 {
     margin-top: -.5%;
     text-align: center;
     width: 100%;
     color: #111;
     font-size: 5em;
     text-transform: uppercase;
-    margin-bottom: 2.5%; }
-    div.container h2 p#sub {
-      font-size: .35em;
-      padding: 0; }
-  div.container h2#splashTitle {
+    margin-bottom: -2.5%; }
+  div.content h2#splashTitle {
     margin-top: -23.25%;
     text-align: center;
     width: 100%;
@@ -60,22 +98,50 @@ div.container {
     color: white;
     font-size: 5em;
     text-shadow: 0px 0px 1px #bbbbbb; }
-  div.container img#splash {
+  div.content h3#sub {
+    text-align: center;
+    width: 100%;
+    font-size: 1.75em;
+    padding: 0;
+    color: #b50140; }
+  div.content img#splash {
+    height: 33%;
     -webkit-filter: brightness(-5%);
     -webkit-filter: contrast(115%);
     -webkit-transition: all 0.35s;
     -o-transition: all 0.35s;
     -moz-transition: all 0.35s;
     width: 80%;
-    margin: 0 10% 0 10%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 0;
     z-index: -9; }
-  div.container p {
-    width: 80%;
-    margin: 0 10% 0 10%;
-    padding: 0 25px 12px 25px;
-    letter-spacing: .6px;
+  div.content p {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 0;
+    letter-spacing: 1.25px;
     line-height: 1.65em;
     margin-bottom: 1em; }
+  div.content p#col-2 {
+    width: 30%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 0; }
+  div.content .container#strap .col-md-4 {
+    background-color: #097ad2; }
+  div.content table {
+    width: 80%;
+    margin: 0 10% 0 10%; }
+    div.content table th {
+      font-weight: 500; }
+    div.content table tr td#l {
+      padding-right: 15px; }
+    div.content table tr td#m {
+      padding: 15px; }
+    div.content table tr td#r {
+      padding-left: 15px; }
 
 footer {
   font-family: "Cinzel", serif;

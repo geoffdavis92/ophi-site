@@ -1,0 +1,44 @@
+.container#strap {
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 80%;
+  margin-right: 10%;
+  margin-left: 10%;
+
+  @media (min-width: 768px) {
+      width: 750px;
+    }
+  @media (min-width: 992px) {
+      width: 970px;
+    }
+  @media (min-width: 1200px) {
+      width: 1170px;
+    }
+}
+
+.row {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+  .row:before , .row-before:after{
+    display: table;
+    content: " ";
+  }
+  .row:after{
+    clear: both;
+  }
+.col-md-4{
+  position: relative;
+  text-align: justify;
+  width: 27.5%;
+  min-height: 1px;
+  padding-right: 25px;
+  padding-left: 25px;
+  @media (min-width: 992px){
+  float: left;
+  }
+}
+
+footer{
+  float: left;
+}
