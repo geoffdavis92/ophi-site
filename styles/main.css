@@ -7,11 +7,9 @@
   font-weight: normal;
   font-style: normal; }
 .container#strap {
-  padding-right: 15px;
-  padding-left: 15px;
   width: 80%;
-  margin-right: 10%;
-  margin-left: 10%; }
+  margin-right: 8.75%;
+  margin-left: 8.75%; }
   @media (min-width: 768px) {
     .container#strap {
       width: 750px; } }
@@ -22,10 +20,6 @@
     .container#strap {
       width: 1170px; } }
 
-.row {
-  margin-right: -15px;
-  margin-left: -15px; }
-
 .row:before, .row-before:after {
   display: table;
   content: " "; }
@@ -33,13 +27,19 @@
 .row:after {
   clear: both; }
 
+.row#header {
+  font-weight: 400;
+  margin: 40px 0 40px 0; }
+  .row#header .col-md-4#header {
+    text-align: center;
+    font-size: 1.25em; }
+
 .col-md-4 {
   position: relative;
   text-align: justify;
-  width: 27.5%;
   min-height: 1px;
-  padding-right: 25px;
-  padding-left: 25px; }
+  width: 350px;
+  padding: 0 20px 0 20px; }
   @media (min-width: 992px) {
     .col-md-4 {
       float: left; } }
@@ -129,8 +129,6 @@ div.content {
     margin-left: 5%;
     margin-right: 5%;
     margin-bottom: 0; }
-  div.content .container#strap .col-md-4 {
-    background-color: #097ad2; }
   div.content table {
     width: 80%;
     margin: 0 10% 0 10%; }
