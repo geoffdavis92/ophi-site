@@ -34,6 +34,10 @@ $pad: 15px;
   width: 100%;
 }
 
+html{
+  font-family: $font-main, sans-serif;
+}
+
 header{
   padding-top: 1%;
   margin-bottom: -1.1%; //2.5%

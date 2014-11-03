@@ -47,6 +47,9 @@
 footer {
   float: left; }
 
+html {
+  font-family: "Open Sans", sans-serif; }
+
 header {
   padding-top: 1%;
   margin-bottom: -1.1%;

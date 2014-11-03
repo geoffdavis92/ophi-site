@@ -1,0 +1,141 @@
+// Feedback Styles
+
+$red: #b50140;
+$gold: #F1d211;
+$gray: #666;
+$lt-gray: #bbb;
+$lt-gray-hover: #ddd;
+$blue: #097AD2;
+
+@import 'fonts';
+// @import 'fontcolors';
+// @import 'hover-emphasis';
+
+// MIXINS
+
+@mixin borders(){
+  border: 1px $gray solid;
+  border-radius: 5px;
+}
+
+@mixin input-bar-styles(){
+  height: 31px;
+ @include borders;
+  width: 250px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  // margin-left: -92px;
+  background-color: transparent;
+  padding-left: 72px;
+  font-size: 1em;
+  padding-top:5px;
+}
+@mixin label-styles(){
+ margin-left: 5px;
+ margin-right: -60px;
+ line-height: 50px;
+ z-index: 1;
+ font-size:1.2em;
+}
+
+@mixin content-active(){
+  color: $red;
+  border-color: $red;
+}
+@mixin btn-hover(){
+  border-color: inherit;
+  color: inherit;
+}
+
+@mixin transition-base(){
+  transition: all .5s;
+  -webkit-transition: all .5s;
+  -moz-transition: all .5s;
+  -o-transition: all .5s;
+}
+
+@mixin transition-hover(){
+  transition: all .37s;
+  -webkit-transition: all .37s;
+  -moz-transition: all .37s;
+  -o-transition: all .37s;
+}
+
+// STYLES
+
+header{
+  font-family: 'Droid Sans', monospace; color: rgb(255, 255, 255); width: 80%; margin-left: 10%; margin-right: 10%; margin-bottom: 2.5%; text-align: center; padding-top: 0.25%; border-top-left-radius: 25px; border-top-right-radius: 25px; border-bottom-right-radius: 25px; border-bottom-left-radius: 25px; background-color: rgb(157, 32, 66);
+  text-align:center;
+  // color: $gray;
+  font-size: 1.5em;
+  //margin-top: -1.25%;
+  margin-bottom: -1.25%;
+  font-family: 'Droid Serif', serif;
+
+  h1{
+    margin-top: 10px;
+    padding-bottom: 15px;
+  }
+}
+div#content{
+  width: 80%;
+  margin: 5% 10% 5% 10%;
+}
+div#content p{
+  margin-left: 0px;
+}
+  p#fine{
+    font-size: .5em;
+    color: $gray;
+  }
+
+input#name , input#email{
+  @include input-bar-styles;
+}
+  input#name{ margin-left: -7px;}
+  input#email{ margin-left: -3px; margin-bottom: 12px;}
+
+label#name , label#email{
+  @include label-styles;
+}
+
+label#message{
+  margin-top: 0;
+  margin-left: 5px;
+  font-size: 1.2em;
+  background-color: white;
+}
+textarea#message{
+  @include borders;
+  width: 630px;
+  max-width: 630px;
+  height: 200px;
+  max-height: 200px;
+  margin-top: -25px;
+  margin-left: 0;
+  background-color: transparent;
+  padding-top:1.9em;
+  padding-left: 5px;
+  font-size: .9em;
+}
+
+input#submit{
+  background-color: white;
+  border: 2px $gray solid;
+  color: $gray;
+  border-radius: 10px;
+  @include transition-base;
+  margin-top: 10px;
+  margin-left: -1px;
+  font-size: 1.2em;
+
+
+}
+  input#submit:hover{
+    cursor: pointer;
+    @include transition-hover;
+    @include btn-hover;
+  }
+  input#submit:active{
+    @include content-active;
+  }

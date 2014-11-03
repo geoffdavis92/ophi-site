@@ -20,27 +20,27 @@ function header(){
     // Create and Link Anchors
     var a1 = document.createElement("a");
     ul.appendChild(a1);
-    a1.setAttribute("href","../link1.html");
+    a1.setAttribute("href","index.html");
     a1.setAttribute("id","a1");
 
     var a2 = document.createElement("a");
     ul.appendChild(a2);
-      a2.setAttribute("href","../link2.html");
+      a2.setAttribute("href","about.html");
     a2.setAttribute("id","a2");
 
     var a3 = document.createElement("a");
     ul.appendChild(a3);
-      a3.setAttribute("href","../link3.html");
+      a3.setAttribute("href","members.html");
     a3.setAttribute("id","a3");
 
     var a4 = document.createElement("a");
     ul.appendChild(a4);
-      a4.setAttribute("href","../link4.html");
+      a4.setAttribute("href","activities.html");
     a4.setAttribute("id","a4");
 
     var a5 = document.createElement("a");
     ul.appendChild(a5);
-      a5.setAttribute("href","../link4.html");
+      a5.setAttribute("href","service.html");
     a5.setAttribute("id","a5");
 
       //Create Li
